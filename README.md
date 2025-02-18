@@ -3,7 +3,9 @@
 ## Introduction
 
 The Traffic Light Control handles three inputs from sensors representing vehicles on the South and West roads and pedestrian crossings - Walk.
-In this project we use button for input. If button is pressed or held, logic sensor = 1 represents there is car in that direction button  
+In this project we use button for input. 
+- If button is pressed or held, logic sensor = 1 represents there is car or pedestrian crossings in that direction button is pressed or held.
+- If button is no pressed or held, logic sensor = 0 represents there isn't car or pedestrian crossings in that direction button is pressed or held.  
 
 This project is developed by a team has four members
 - Nguyễn Hoàng Hiệp
