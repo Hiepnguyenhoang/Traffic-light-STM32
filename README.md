@@ -24,33 +24,14 @@ Using button for input.
 LCD Display
 - Displays the elapsed time for light states:
   - Go (Green for 10s) → Warning (Yellow for 5s) → Stop (Red).
-  - Pedestrian light sequence: White (10s) → Blinking Warning (5s) → Red.
+  - Pedestrian light sequence: Green (10s) → Blinking Warning - Red (5s) → Red.
 - Shows "00" when all lights are Red.
-
-
 
 ## Hardware Requirements
 - STM32 blue pill: 1 units
 - button: 3 units
 - LCD 1602: 1 units 
 - LED (red, green, yellow): 3 units
-
-## Connections
-| Module LoRa | Arduino Uno R3 |
-|-------------|----------------|
-| VCC         | 3.3V           |
-| GND         | GND            |
-| RST         | 9              |
-| DIO0        | 2              |
-| NSS         | 10             |
-| MOSI        | 11             |
-| MISO        | 12             |
-| SCK         | 13             |
-
-## Measurement Scenarios
-- Straight transmission: Measurement across both sides of West Lake (Hồ Tây)
-- Transmission through tree canopies: The transmitter will be placed on top of a high-rise building while the receiver is under the tree canopy.
-- Transmission with obstacles such as walls or buildings: Measurements will be taken across different floors of Nhà Xinh residential complex in Yên Hòa, Hanoi.
 
 ## Contact
 
