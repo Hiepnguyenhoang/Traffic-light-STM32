@@ -5,7 +5,7 @@
 The Traffic Light Control handles three inputs from sensors representing vehicles on the South and West roads and pedestrian crossings - Walk. The system operates based on:
 - Traffic lights in different directions must change from Go (green) -> Warning (yellow) -> Stop (red). When one light is in Go or Warning, the other direction's lights must be in Stop.
 - priority: South-Walk-West. if the sensors in all directions are logic 1, the South's vehicles will move first, then the Walk, then the West.
-- Alternate Right of Way: When multiple sensors detect a vehicle (sensor = 1), the traffic lights will turn green base on priority, alternating the right of way. For example, initially, the South direction is given priority, followed by the Walk (Pedestrian) signal and the South direction. If the South light is already Green, then if there is a vehicle in the West or Pedestrian crossings, the light in that direction will green although there's a vehicle in South direction
+- Alternate Right of Way: When multiple sensors detect a vehicle (sensor = 1), the traffic lights will turn green base on priority, alternating the right of way. For example, initially, the South direction is given priority, followed by the Walk (Pedestrian) signal and the West direction. If the South light is already Green, then if there is a vehicle in the West or Pedestrian crossings, the light in that direction will green although there's a vehicle in South direction
 
 This project is developed by a team has four members
 - Nguyễn Hoàng Hiệp
@@ -19,6 +19,12 @@ Implement traffic light control system on STM32 bluepill using an FSM (Finite St
 Using button for input. 
 - If button is pressed or held, logic sensor = 1 represents there is car or pedestrian crossings in that direction button is pressed or held.
 - If button isn't pressed or held, logic sensor = 0 represents there isn't car or pedestrian crossings in that direction button is pressed or held.  
+LCD Display:
+- Displays the elapsed time for light states.
+-- Go (Green for 10s) → Warning (Yellow for 5s) → Stop (Red).
+-- Pedestrian light sequence: White (10s) → Blinking Warning (5s) → Red.
+- Shows "00" when all lights are Red.
+
 
 ## Hardware Requirements
 - STM32 blue pill: 1 units
