@@ -20,7 +20,7 @@ Using button for input.
 - If button is pressed or held, logic sensor = 1 represents there is car or pedestrian crossings in that direction button is pressed or held.
 - If button isn't pressed or held, logic sensor = 0 represents there isn't car or pedestrian crossings in that direction button is pressed or held.  
 LCD Display:
-- Displays the elapsed time for light states.
+- **Displays the elapsed time for light states.**
 * Go (Green for 10s) → Warning (Yellow for 5s) → Stop (Red).
 * Pedestrian light sequence: White (10s) → Blinking Warning (5s) → Red.
 - Shows "00" when all lights are Red.
