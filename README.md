@@ -16,7 +16,7 @@ This project is developed by a team has four members
 ## Objective
 
 Implement traffic light control system on STM32 bluepill using an FSM (Finite State Machine) approach.
-In this project we use button for input. 
+Using button for input. 
 - If button is pressed or held, logic sensor = 1 represents there is car or pedestrian crossings in that direction button is pressed or held.
 - If button isn't pressed or held, logic sensor = 0 represents there isn't car or pedestrian crossings in that direction button is pressed or held.  
 
