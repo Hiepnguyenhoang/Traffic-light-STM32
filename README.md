@@ -1,4 +1,9 @@
-# TESTING AND MAXIMIZING THE COMMUNICATION CAPABILITIES OF LPWA LORA
+# TRAFFIC LIGHT CONTROL SYSTEM (IMPLEMENT ON STM32 BLUEPILL)
+
+## Introduction
+
+The Traffic Light Control handles three inputs from sensors representing vehicles on the South and West roads and pedestrian crossings - Walk.
+In this project we use button for input. If button is pressed or held, logic sensor = 1 represents there is car in that direction button  
 
 This project is developed by a team has four members
 - Nguyễn Hoàng Hiệp
