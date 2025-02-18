@@ -7,14 +7,6 @@ The Traffic Light Control handles three inputs from sensors representing vehicle
 - priority: South-Walk-West. if the sensors in all directions are logic 1, the South's vehicles will move first, then the Walk, then the West.
 - Alternate Right of Way: When multiple sensors detect a vehicle (sensor = 1), the traffic lights will turn green base on priority, alternating the right of way. For example, initially, the South direction is given priority, followed by the Walk (Pedestrian) signal and the South direction. If the South light is already Green, then if there is a vehicle in the West or Pedestrian crossings, the light in that direction will green although there's a vehicle in South direction
 
-
-
-
-
-
-
-
-
 This project is developed by a team has four members
 - Nguyễn Hoàng Hiệp
 - Huỳnh Quang Đức
@@ -23,11 +15,10 @@ This project is developed by a team has four members
 
 ## Objective
 
+Implement traffic light control system on STM32 bluepill using an FSM (Finite State Machine) approach.
 In this project we use button for input. 
 - If button is pressed or held, logic sensor = 1 represents there is car or pedestrian crossings in that direction button is pressed or held.
 - If button isn't pressed or held, logic sensor = 0 represents there isn't car or pedestrian crossings in that direction button is pressed or held.  
-
-## Measurements method
 
 ## Hardware Requirements
 - STM32 blue pill: 1 units
